@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body className={inter.className}>
+      <body className="bg-slate-700">
         <Navibar/>
         <main className="bg-slate-700 h-screen p-16">
           {children}
