@@ -16,7 +16,7 @@ export default function Product({ product } : ProductProps){
                 {product.title}
                 </p>
                 <p className="text-md text-teal-300">
-                {product.price}   
+                R${product.price}   
                 </p>
                 </div>
             <button className="rounded-md bg-teal-600 text-white px-3.5 py-2.5 text-sm text-center">Adicionar ao Carrinho</button>

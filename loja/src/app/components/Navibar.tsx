@@ -1,4 +1,4 @@
-import { SignedIn, SignedOut } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton, SignInButton } from "@clerk/nextjs";
 import Link from "next/link";
 
 function Navibar (){
@@ -11,10 +11,14 @@ function Navibar (){
         </Link>
         <div className="flex items-center gap-8">
           <SignedIn>
-            usuario logado
+            <UserButton/>
           </SignedIn>
           <SignedOut>
-            faça login
+            <SignInButton mode="modal">
+            <button className="rounded-md border-2 p-3">
+             faça login
+            </button>
+            </SignInButton>
           </SignedOut>
         </div>
       </nav>
